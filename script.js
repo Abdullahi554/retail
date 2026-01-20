@@ -185,4 +185,16 @@ function checkout() {
     window.location.href = "retail.html";
   });
 
+  // det//
+  function changeImage(element) {
+  document.getElementById("mainProductImage").src = element.src;
+
+  document.querySelectorAll(".thumb").forEach(img => {
+    img.classList.remove("active");
+  });
+
+  element.classList.add("active");
+}
+
+
 
