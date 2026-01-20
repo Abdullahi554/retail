@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Royal Shop | Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+  <div class="container">
+    <img src="Royal.png" alt="Rooyal Shop Logo" class="logo-img">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="retail.html">
+      <span class="brand-text">Rooyal Shop</span>
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto gap-3">
+        <li class="nav-item"><a class="nav-link" href="retail.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+    <a class="cartshp position-relative" href="cart.html">
+      <i class="bi bi-cart fs-4"></i>
+      <span class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display:none;">0</span>
+    </a>
+  </div>
+</nav>
+<section class="py-5 bg-light product-section">
+  <div class="container">
+
+    <div class="row g-4 align-items-start">
+
+      <!-- LEFT: IMAGE GALLERY -->
+      <div class="col-lg-7 col-12">
+        <div class="product-gallery">
+
+          <div class="thumbnail-list">
+            <img src="ab7.png" onclick="changeImage(this)" class="thumb active">
+            <img src="ab.png" onclick="changeImage(this)" class="thumb">
+            <img src="ab16.png" onclick="changeImage(this)" class="thumb">
+          </div>
+
+          <div class="main-image">
+            <img id="mainProductImage" src="ab7.png" alt="Modern Abaya">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT: PRODUCT DETAILS -->
+      <div class="col-lg-5 col-12 product-info">
+
+        <h3 class="fw-bold mb-3">Modern Abaya</h3>
+
+        <p class="price">
+          <span class="current-price">$120.00</span>
+          <span class="old-price">$150.00</span>
+        </p>
+
+        <!-- COLOR (NOT BUTTON) -->
+        <div class="info-group">
+          <span class="label">Color</span>
+          <span class="value-box">GREEN</span>
+        </div>
+
+        <!-- STYLE (NOT BUTTON) -->
+        <div class="info-group">
+          <span class="label">Style</span>
+          <span class="value-box">ABY-00921</span>
+        </div>
+
+        <!-- SIZE -->
+        <div class="info-group">
+          <span class="label">Size</span>
+          <div class="size-options">
+            <span class="size active">S / M</span>
+            <span class="size disabled">L / XL</span>
+          </div>
+        </div>
+
+        <!-- ADD TO CART -->
+        <button class="btn btn-dark w-100 add-cart-btn"
+          onclick="addToCart(1, 'Modern Abaya', 120, 'ab7.png')">
+          Add to Cart
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+        
+
+
+        <footer class="footer py-4 text-center">
+  <p class="mb-0">© 2026 Royal Shop Store. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
