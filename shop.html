@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Royal Shop - Shop Page</title>
+  <title>Royal Shop | Cart</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap 5 -->
@@ -20,7 +20,7 @@
 <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
   <div class="container">
     <img src="Royal.png" alt="Rooyal Shop Logo" class="logo-img">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="shop.html">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="retail.html">
       <span class="brand-text">Luxe Kaftans Kenya</span>
     </a>
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -29,8 +29,7 @@
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav ms-auto gap-3">
         <li class="nav-item"><a class="nav-link" href="retail.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
       </ul>
     </div>
@@ -38,189 +37,212 @@
       <i class="bi bi-cart fs-4"></i>
       <span class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display:none;">0</span>
     </a>
-
   </div>
 </nav>
 
-<!-- ================= HERO ================= -->
-<section class="hero-shop py-5 text-center text-white" style="background-image:url('shop-bg.jpg'); background-size:cover; background-position:center;">
-  <div class="container">
-    <h1 class="fw-bold">Luxe Kaftans Kenya, Clothing And Accessorise</h1>
-    <p class="explore">Explore different types of abayas, perfect for every occasion and style.</p>
-  </div>
-</section>
-
-<!-- ================= PRODUCTS GRID ================= -->
+<!-- ================= SHOP SECTION ================= -->
 <section class="py-5">
   <div class="container">
     <div class="row g-4">
 
-      <!-- Product 1 -->
-      <div class="col-md-4">
-        <div class="product-card">
-          <a href="det.html">
-          <img src="ab7.png" alt="Modern Abaya"></a>
-          <h6>Modern Abaya</h6>
+      <!-- PRODUCT 1 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=1&name=Modern Abaya&price=120&image=ab7.png&color=Green&style=ABY-00921&size=S/M">
+          <img src="ab7.png" class="img-fluid rounded">
+          <h6 class="mt-2">Modern Abaya</h6>
           <p>$120.00</p>
-          <button class="btn btn-dark btn-sm w-100" 
-          onclick="addToCart(1, 'Modern Abaya', 120, 'ab7.png')">Add to Cart</button>
-        
-        </div>
+        </a>
       </div>
 
-      <!-- Product 2 -->
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="ab12.png" alt="Luxury Abaya">
-          <h6>Luxury Abaya</h6>
+      <!-- PRODUCT 2 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=2&name=Luxury Abaya&price=450&image=ab12.png&color=Black&style=ABY-00451&size=L/XL">
+          <img src="ab12.png" class="img-fluid rounded">
+          <h6 class="mt-2">Luxury Abaya</h6>
           <p>$450.00</p>
-          <button class="btn btn-dark btn-sm w-100" 
-          onclick="addToCart(2, 'Luxury Abaya', 450, 'ab12.png')">Add to Cart</button>
-        </div>
+        </a>
       </div>
 
-      <!-- Product 3 -->
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="ab9.png" alt="Open/Closed Abaya">
-          <h6>Open/Closed Abaya</h6>
+      <!-- PRODUCT 3 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=3&name=Open Abaya&price=320&image=ab9.png&color=Brown&style=ABY-00777&size=S/M">
+          <img src="ab9.png" class="img-fluid rounded">
+          <h6 class="mt-2">Open Abaya</h6>
           <p>$320.00</p>
-          <button class="btn btn-dark btn-sm w-100" 
-          onclick="addToCart(3, 'Open/Closed Abaya', 320, 'ab9.png')">Add to Cart</button>
-        </div>
+        </a>
       </div>
 
-      <!-- Product 4 -->
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="ab11.png" alt="Long Abaya">
-          <h6>Long Abaya</h6>
-          <p>$220.00</p>
-          <button class="btn btn-dark btn-sm w-100" 
-          onclick="addToCart(4, 'Long Abaya', 220, 'ab11.png')">Add to Cart</button>
-        </div>
+      <!-- PRODUCT 4 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=4&name=Classic Abaya&price=280&image=ab4.png&color=Navy&style=ABY-00234&size=M/L">
+          <img src="ab4.png" class="img-fluid rounded">
+          <h6 class="mt-2">Classic Abaya</h6>
+          <p>$280.00</p>
+        </a>
       </div>
 
-      <!-- Product 5 -->
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="ab4.png" alt="Designer Abaya">
-          <h6>Designer Abaya</h6>
-          <p>$380.00</p>
-          <button class="btn btn-dark btn-sm w-100" 
-          onclick="addToCart(5, 'Designer Abaya', 380, 'ab4.png')">Add to Cart</button>
-        </div>
+      <!-- PRODUCT 5 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=5&name=Embroidered Abaya&price=520&image=ab5.png&color=White&style=ABY-00612&size=L/XL">
+          <img src="ab5.png" class="img-fluid rounded">
+          <h6 class="mt-2">Embroidered Abaya</h6>
+          <p>$520.00</p>
+        </a>
       </div>
 
-      <!-- Product 6 -->
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="ab5.png" alt="Casual Abaya">
-          <h6>Casual Abaya</h6>
-          <p>$150.00</p>
-          <button class="btn btn-dark btn-sm w-100" 
-          onclick="addToCart(6, 'Casual Abaya', 150, 'ab5.png')">Add to Cart</button>
-        </div>
+      <!-- PRODUCT 6 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=6&name=Casual Abaya&price=190&image=ab6.png&color=Grey&style=ABY-00888&size=S/M">
+          <img src="ab6.png" class="img-fluid rounded">
+          <h6 class="mt-2">Casual Abaya</h6>
+          <p>$190.00</p>
+        </a>
       </div>
 
-
-      <!-- Product 7 -->
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="ab13.png" alt="Modern Abaya">
-          <h6>Modern Abaya</h6>
+      <!-- PRODUCT 7 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=1&name=Modern Abaya&price=120&image=ab10.png&color=Green&style=ABY-00921&size=S/M">
+          <img src="ab10.png" class="img-fluid rounded">
+          <h6 class="mt-2">Modern Abaya</h6>
           <p>$120.00</p>
-          <button class="btn btn-dark btn-sm w-100" 
-          onclick="addToCart(1, 'Modern Abaya', 120, 'ab7.png')">Add to Cart</button>
-        </div>
+        </a>
       </div>
 
-      <!-- Product 8 -->
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="ab14.png" alt="Luxury Abaya">
-          <h6>Luxury Abaya</h6>
+      <!-- PRODUCT 8 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=2&name=Luxury Abaya&price=450&image=ab14.png&color=Black&style=ABY-00451&size=L/XL">
+          <img src="ab14.png" class="img-fluid rounded">
+          <h6 class="mt-2">Luxury Abaya</h6>
           <p>$450.00</p>
-          <button class="btn btn-dark btn-sm w-100" 
-          onclick="addToCart(2, 'Luxury Abaya', 450, 'ab12.png')">Add to Cart</button>
-        </div>
+        </a>
       </div>
 
-      <!-- Product 9 -->
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="ab15.png" alt="Open/Closed Abaya">
-          <h6>Open/Closed Abaya</h6>
+      <!-- PRODUCT 9 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=3&name=Open Abaya&price=320&image=ab15.png&color=Brown&style=ABY-00777&size=S/M">
+          <img src="ab15.png" class="img-fluid rounded">
+          <h6 class="mt-2">Open Abaya</h6>
           <p>$320.00</p>
-          <button class="btn btn-dark btn-sm w-100" 
-          onclick="addToCart(3, 'Open/Closed Abaya', 320, 'ab9.png')">Add to Cart</button>
-        </div>
+        </a>
       </div>
 
-      <!-- Product 10 -->
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="ab16.png" alt="Long Abaya">
-          <h6>Long Abaya</h6>
-          <p>$220.00</p>
-          <button class="btn btn-dark btn-sm w-100" 
-          onclick="addToCart(4, 'Long Abaya', 220, 'ab11.png')">Add to Cart</button>
-        </div>
+      <!-- PRODUCT 10 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=4&name=Classic Abaya&price=280&image=ab17.png&color=Navy&style=ABY-00234&size=M/L">
+          <img src="ab17.png" class="img-fluid rounded">
+          <h6 class="mt-2">Classic Abaya</h6>
+          <p>$280.00</p>
+        </a>
       </div>
 
-      <!-- Product 11 -->
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="ab17.png" alt="Designer Abaya">
-          <h6>Designer Abaya</h6>
-          <p>$380.00</p>
-          <button class="btn btn-dark btn-sm w-100" 
-          onclick="addToCart(5, 'Designer Abaya', 380, 'ab4.png')">Add to Cart</button>
-        </div>
+      <!-- PRODUCT 11 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=5&name=Embroidered Abaya&price=520&image=ab18.png&color=White&style=ABY-00612&size=L/XL">
+          <img src="ab18.png" class="img-fluid rounded">
+          <h6 class="mt-2">Embroidered Abaya</h6>
+          <p>$520.00</p>
+        </a>
       </div>
 
-      <!-- Product 12 -->
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="ab18.png" alt="Casual Abaya">
-          <h6>Casual Abaya</h6>
-          <p>$150.00</p>
-          <button class="btn btn-dark btn-sm w-100" 
-          onclick="addToCart(6, 'Casual Abaya', 150, 'ab5.png')">Add to Cart</button>
-        </div>
+      <!-- PRODUCT 12 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=6&name=Casual Abaya&price=190&image=ab16.png&color=Grey&style=ABY-00888&size=S/M">
+          <img src="ab16.png" class="img-fluid rounded">
+          <h6 class="mt-2">Casual Abaya</h6>
+          <p>$190.00</p>
+        </a>
       </div>
 
-      <!-- Product 13 -->
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="ab19.png" alt="Casual Abaya">
-          <h6>Casual Abaya</h6>
-          <p>$150.00</p>
-          <button class="btn btn-dark btn-sm w-100" 
-          onclick="addToCart(6, 'Casual Abaya', 150, 'ab5.png')">Add to Cart</button>
-        </div>
+      <!-- PRODUCT 13 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=1&name=Modern Abaya&price=120&image=ab2.png&color=Green&style=ABY-00921&size=S/M">
+          <img src="ab2.png" class="img-fluid rounded">
+          <h6 class="mt-2">Modern Abaya</h6>
+          <p>$120.00</p>
+        </a>
       </div>
 
-      <!-- Product 14 -->
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="ab20.png" alt="Casual Abaya">
-          <h6>Casual Abaya</h6>
-          <p>$150.00</p>
-          <button class="btn btn-dark btn-sm w-100" 
-          onclick="addToCart(6, 'Casual Abaya', 150, 'ab5.png')">Add to Cart</button>
-        </div>
+      <!-- PRODUCT 14 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=2&name=Luxury Abaya&price=450&image=ab11.png&color=Black&style=ABY-00451&size=L/XL">
+          <img src="ab11.png" class="img-fluid rounded">
+          <h6 class="mt-2">Luxury Abaya</h6>
+          <p>$450.00</p>
+        </a>
       </div>
 
-      <!-- Product 15 -->
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="ab21.png" alt="Casual Abaya">
-          <h6>Casual Abaya</h6>
-          <p>$150.00</p>
-          <button class="btn btn-dark btn-sm w-100" 
-          onclick="addToCart(6, 'Casual Abaya', 150, 'ab5.png')">Add to Cart</button>
-        </div>
+      <!-- PRODUCT 15 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=3&name=Open Abaya&price=320&image=ab7.png&color=Brown&style=ABY-00777&size=S/M">
+          <img src="ab3.png" class="img-fluid rounded">
+          <h6 class="mt-2">Open Abaya</h6>
+          <p>$320.00</p>
+        </a>
+      </div>
+
+      <!-- PRODUCT 16 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=4&name=Classic Abaya&price=280&image=ab8.png&color=Navy&style=ABY-00234&size=M/L">
+          <img src="ab8.png" class="img-fluid rounded">
+          <h6 class="mt-2">Classic Abaya</h6>
+          <p>$280.00</p>
+        </a>
+      </div>
+
+      <!-- PRODUCT 17 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=5&name=Embroidered Abaya&price=520&image=ab20.png&color=White&style=ABY-00612&size=L/XL">
+          <img src="ab20.png" class="img-fluid rounded">
+          <h6 class="mt-2">Embroidered Abaya</h6>
+          <p>$520.00</p>
+        </a>
+      </div>
+
+      <!-- PRODUCT 18 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=6&name=Casual Abaya&price=190&image=ab21.png&color=Grey&style=ABY-00888&size=S/M">
+          <img src="ab21.png" class="img-fluid rounded">
+          <h6 class="mt-2">Casual Abaya</h6>
+          <p>$190.00</p>
+        </a>
+      </div>
+
+      <!-- PRODUCT 19 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=5&name=Embroidered Abaya&price=520&image=ab14.png&color=White&style=ABY-00612&size=L/XL">
+          <img src="ab14.png" class="img-fluid rounded">
+          <h6 class="mt-2">Embroidered Abaya</h6>
+          <p>$520.00</p>
+        </a>
+      </div>
+
+      <!-- PRODUCT 20 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a class="product-card d-block text-decoration-none text-dark"
+           href="det.html?id=6&name=Casual Abaya&price=190&image=ab1.png&color=Grey&style=ABY-00888&size=S/M">
+          <img src="ab1.png" class="img-fluid rounded">
+          <h6 class="mt-2">Casual Abaya</h6>
+          <p>$190.00</p>
+        </a>
       </div>
 
     </div>
@@ -229,10 +251,10 @@
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer py-4 text-center">
-  <p class="mb-0">© 2026 Royal Shop Store. All Rights Reserved.</p>
+  <p class="mb-0">© 2026 Luxe Kaftans Kenya. All Rights Reserved.</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- ================= SCRIPT ================= -->
 <script src="script.js"></script>
 </body>
 </html>
