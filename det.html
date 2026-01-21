@@ -39,86 +39,36 @@
     </a>
   </div>
 </nav>
-<section class="py-5 bg-light product-section">
+
+<section class="py-5 bg-light">
   <div class="container">
+    <div class="row g-4">
 
-    <div class="row g-4 align-items-start">
-
-      <!-- LEFT: IMAGE GALLERY -->
-      <div class="col-lg-7 col-12">
-        <div class="product-gallery">
-
-          <div class="thumbnail-list">
-            <img src="ab7.png" onclick="changeImage(this)" class="thumb active">
-            <img src="ab14.png" onclick="changeImage(this)" class="thumb">
-            <img src="ab16.png" onclick="changeImage(this)" class="thumb">
-          </div>
-
-          <div class="main-image">
-            <img id="mainProductImage" src="ab7.png" alt="Modern Abaya">
-          </div>
-
-        </div>
+      <div class="col-lg-7">
+        <img id="productImage" class="img-fluid rounded">
       </div>
 
-      <!-- RIGHT: PRODUCT DETAILS -->
-      <div class="col-lg-5 col-12 product-info">
+      <div class="col-lg-5">
+        <h3 id="productName" class="fw-bold"></h3>
+        <p class="fs-4 fw-bold">$<span id="productPrice"></span></p>
 
-        <h3 class="fw-bold mb-3">Modern Abaya</h3>
+        <p><strong>Color:</strong> <span id="productColor"></span></p>
+        <p><strong>Style:</strong> <span id="productStyle"></span></p>
+        <p><strong>Size:</strong> <span id="productSize"></span></p>
 
-        <p class="price">
-          <span class="current-price">$120.00</span>
-          <span class="old-price">$150.00</span>
-        </p>
-
-        <!-- COLOR (NOT BUTTON) -->
-        <div class="info-group">
-          <span class="label">Color</span>
-          <span class="value-box">RED</span>
-        </div>
-
-        <!-- STYLE (NOT BUTTON) -->
-        <div class="info-group">
-          <span class="label">Style</span>
-          <span class="value-box">ABY-00921</span>
-        </div>
-
-        <!-- SIZE -->
-        <div class="info-group">
-          <span class="label">Size</span>
-          <div class="size-options">
-            <a><span class="size active">S</span></a>
-            <a><span class="size active">M</span></a>
-            <a><span class="size active">L</span></a>
-            <a><span class="size active">XL</span></a>
-          </div>
-        </div>
-
-        <!-- ADD TO CART -->
-        <button class="btn btn-dark w-100 add-cart-btn"
-          onclick="addToCart(1, 'Modern Abaya', 120, 'ab7.png')">
+        <button id="addToCartBtn" class="btn btn-dark w-100">
           Add to Cart
         </button>
-
       </div>
 
     </div>
-
   </div>
 </section>
 
-        
-
-
-        <footer class="footer py-4 text-center">
-  <p class="mb-0">© 2026 Royal Shop Store. All Rights Reserved.</p>
+<footer class="footer py-4 text-center">
+  <p class="mb-0">© 2026 Luxe Kaftans Kenya. All Rights Reserved.</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
